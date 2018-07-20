@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/jquery.validate.min.js"></script>
+    <script src="../static/js/messages_de.js"></script>
+    <style>
+        .errorClass{
+            color: red;
+        }
+        .validClass{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form id="login">
+        <div>
+            <input name="email" placeholder="Deine E-Mail Adresse" type="text">
+        </div>
+        <div>
+            <input name="password" placeholder="Dein Passwort" type="password">
+        </div>
+    </form>
+<script>
+
+    $(function(){
+        $("#login").validate({
+            errorClass: "errorClass",
+            validClass: "validClass",
+            highlight: function(element, errorClass, validClass) {
+                $(element).addClass(errorClass).removeClass(validClass);
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                $(element).removeClass(errorClass).addClass(validClass);
+            },
+            rules: {
+                email:{
+                    required:true,
+                    email:true,
+                    //Fake Adresse
+                    remote: "https://validator.com"
+                },
+                password: {
+                    required:true
+                }
+            }
+        })
+    });
+</script>
+</body>
+</html>
