@@ -145,6 +145,7 @@ body {
     background-color: darkcyan;
     box-shadow: 0 1px 3px #9F9F9F;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .contentRight {
@@ -258,7 +259,7 @@ ul.flightList p {
 
 #registrationOverlayContent{
     width: 450px;
-    height: 600px;
+    height: 650px;
     padding: 1em;
     background-color: white;
     border-radius: 10px;
@@ -271,6 +272,7 @@ ul.flightList p {
 }
 #registrationOverlayContent label{
     font-weight: bold;
+    font-size: 0.9em;
 }
 
 
@@ -347,9 +349,15 @@ input.error {
 
 .error{
     display: inline-block;
-    font-family: inherit;
+    font-weight: bold;
     color: red;
-    font-size: 0.8em;
+    font-size: 1em;
+}
+
+#footer{
+    width: 100%;
+    height: 5%;
+    background-color: darkcyan;
 }
 
 
