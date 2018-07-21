@@ -29,9 +29,7 @@ body {
 }
 
 
-
-
-.header{
+.header {
     width: 100%;
     height: 4%;
     background-color: darkcyan;
@@ -52,15 +50,15 @@ body {
     border-radius: 10%;
     margin-right: 2em;
 }
+
 /* HEADER BAR */
+
 .headerBar {
     background-color: lightgray;
     border-bottom: 2px solid darkcyan;
     padding: 5px;
     font-size: 1.2rem;
-
 }
-
 
 .headerBar form {
     width: 100%;
@@ -85,10 +83,6 @@ body {
     transition: background-color 2s;
     transition-timing-function: ease-in-out;
 }
-
-
-
-
 
 .headerBar input[type="date"] {
     width: 160px;
@@ -125,6 +119,7 @@ body {
 }
 
 /* CONTENT */
+
 .contentWrapper {
     height: 100%;
     background-color: #f3f3f3;
@@ -155,6 +150,7 @@ body {
 }
 
 /* FLIGHT LIST */
+
 ul.flightList {
     margin: 0;
     padding: 0;
@@ -207,8 +203,8 @@ ul.flightList p {
     content: "↘️";
 }
 
-
 /* WAIT OVERLAY WRAPPER */
+
 #waitOverlayWrapper {
     width: 100%;
     height: 100%;
@@ -218,17 +214,6 @@ ul.flightList p {
     left: 0;
     z-index:1;
 }
-
-#registrationOverlayWrapper{
-    width: 100%;
-    height: 113%;
-    background-color: rgba(70, 70, 70, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index:2;
-}
-
 
 #waitOverlayContent {
     width: 180px;
@@ -241,6 +226,18 @@ ul.flightList p {
     left: 40%;
     top: calc(50% - 75px);
     z-index: 100000;
+}
+
+/* REGISTRATION OVERLAY WRAPPER */
+
+#registrationOverlayWrapper{
+    width: 100%;
+    height: 113%;
+    background-color: rgba(70, 70, 70, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:2;
 }
 
 #register-form input{
@@ -256,7 +253,6 @@ ul.flightList p {
 
 }
 
-
 #registrationOverlayContent{
     width: 450px;
     height: 650px;
@@ -270,12 +266,11 @@ ul.flightList p {
     top: calc(20% - 75px);
 
 }
+
 #registrationOverlayContent label{
     font-weight: bold;
     font-size: 0.9em;
 }
-
-
 
 .inlineBlock{
     display: inline-block;
@@ -326,6 +321,8 @@ ul.flightList p {
     height: 100%;
     width: 100%;
 }
+
+/* ERROR CONTAINER */
 
 #errorContainer {
     display: none;
